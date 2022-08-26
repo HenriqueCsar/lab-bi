@@ -1,0 +1,17 @@
+= /* Ano -> Semestre -> Trimestre -> Mes -> Dia */
+GENERATE ( 
+    CALENDAR ( DATE ( year(min([Data do Cadastro])), month(min([Data do Cadastro])), day(min([Data do Cadastro]))), 	         DATE (year(max(Proposta[Data do Cadastro])), month(max(Proposta[Data do Cadastro])), day(MAX(Proposta[Data do Cadastro])))),
+    var Datas = [Date]
+    var Ano =  YEAR ( Datas )
+    var Semestre = if(month(Datas)>6, 2,1)
+    var Quarter = QUARTER(datas)&"º Trimestre"
+    var Mes= Upper(LEFT(FORMAT(  Datas, "mmmm"),1))& LOWER(MID(FORMAT(( Datas ), "mmmm"),2,len(FORMAT( Datas , "mmmm"))))
+    var Dia= Upper(LEFT(FORMAT( Datas , "dddd"),1))& LOWER(MID(FORMAT( Datas , "dddd"),2,len(FORMAT( Datas , "dddd"))))
+  RETURN   ROW ( 
+    "Data Relacao", FORMAT(Datas,"dd-mm-yyyy"),
+    "Ano", Ano, 
+    "Semestre", Semestre&"º Semestre",
+    "Quarter", Quarter,
+    "Mes", Mes, 
+    "Dia", Dia)
+  )
