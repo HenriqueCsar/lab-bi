@@ -57,6 +57,6 @@ declare
 		exec sp_OAGetProperty @Object, 'responseText'
 
 		select * from @temp  a
-		cross apply openjson(text) with(code varchar(8000)) b
+		cross apply openjson(text) with(data varchar(8000)) b
 
 
