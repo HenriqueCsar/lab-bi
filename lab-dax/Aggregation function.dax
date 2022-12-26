@@ -5,3 +5,17 @@ APPROXIMATEDISTINCTCOUNT(<columnName>)
 // Returns the average (arithmetic mean) of all the numbers in a column.
 
 AVERAGE(<columnName>)
+
+// Returns the average (arithmetic mean) of the values in a column. Handles text and non-numeric values.
+
+AVERAGEA(<column>)  
+
+// Transaction ID	Amount	    Result
+// 0000123           1	        Counts as 1
+// 0000124	         20	        Counts as 20
+// 0000125	         n/a	    Counts as 0
+// 0000126		                Counts as 0
+// 0000126	        TRUE	    Counts as 1
+
+
+// the result is 22/5.
