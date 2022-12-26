@@ -1,0 +1,7 @@
+// Returns the approximate number of rows that contain distinct values in a column. This function can query large amounts of data with potentially better performance than DISTINCTCOUNT, with slight deviation from the exact result.
+
+APPROXIMATEDISTINCTCOUNT(<columnName>)
+
+// Returns the average (arithmetic mean) of all the numbers in a column.
+
+AVERAGE(<columnName>)
