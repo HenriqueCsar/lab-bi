@@ -4,4 +4,3 @@ var DateNow = date(year(today()), 12, 31)
 
 return 
 if(DimData[Date]>=DateBefore && DimData[Date]<=DateNow,1,0)
-
