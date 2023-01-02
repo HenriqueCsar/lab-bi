@@ -1,0 +1,6 @@
+Filter Date = 
+var DateBefore = date(year(today())-3, 01, 01)
+var DateNow = date(year(today()), 12, 31)
+
+return 
+if(DimData[Date]>DateBefore && DimData[Date]<=DateNow,1,0)
