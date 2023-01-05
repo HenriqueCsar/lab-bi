@@ -1,0 +1,1 @@
+select right('00000000000' + cast(c.cpf as varchar(11)),11)
