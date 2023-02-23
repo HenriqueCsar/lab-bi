@@ -1,11 +1,11 @@
-CREATE TABLE Pedidos (
-    Id int PRIMARY KEY,
-    Itens nvarchar(max)
-);
+--CREATE TABLE Pedidos (
+--    Id int PRIMARY KEY,
+--    Itens nvarchar(max)
+--);
 
-INSERT INTO Pedidos VALUES (1, 'camisa,calça,meias');
-INSERT INTO Pedidos VALUES (2, 'sapato,blusa,saias');
-INSERT INTO Pedidos VALUES (3, 'gravata,terno,cinto');
+--INSERT INTO Pedidos VALUES (1, 'camisa,calça,meias');
+--INSERT INTO Pedidos VALUES (2, 'sapato,blusa,saias');
+--INSERT INTO Pedidos VALUES (3, 'gravata,terno,cinto');
 
 
 select * from pedidos
