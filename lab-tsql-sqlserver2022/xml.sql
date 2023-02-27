@@ -10,6 +10,5 @@ SELECT distinct top 100 try_cast(
 	Propostaid,
 	b.cpf
 
-FROM externo.consulta a with(nolock)
-join proposta b with(nolock) on b.id = a.propostaid
+FROM tabela a with(nolock)
 where resposta like '%operacao%'
