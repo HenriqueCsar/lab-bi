@@ -1,0 +1,12 @@
+Escolhendo um algoritmo por tipo
+SQL Server Data Mining inclui os seguintes tipos de algoritmo:
+
+Algoritmos de classificação preveem uma ou mais variáveis discretas, com base nos outros atributos do conjunto de dados.
+
+Algoritmos de regressão preveem uma ou mais variáveis numéricas contínuas, como lucro ou perda, com base nos outros atributos do conjunto de dados.
+
+Algoritmos de segmentação dividem dados em grupos ou clusters de itens que têm propriedades semelhantes.
+
+Algoritmos de associação encontram correlações entre atributos diferentes em um conjunto de dados. A aplicação mais comum desse tipo de algoritmo é para criar regras de associação, que podem ser usadas em uma análise da cesta de compras.
+
+Algoritmos de análise de sequência resumem sequências ou episódios frequentes em dados, como uma série de cliques em um site da Web ou uma série de eventos de log de manutenção de computador anteriores.
